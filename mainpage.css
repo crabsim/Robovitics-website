@@ -3,6 +3,10 @@
     margin:0;
     padding:0;
 }
+body
+{
+    background-color: rgb(25, 18, 70);
+}
 header
 {
     background-color: rgb(25, 18, 70);
@@ -15,6 +19,7 @@ header
     float:left;
     list-style:none;
     margin-top:30px;
+    position: relative;
 }
 .nav li
 {
@@ -43,10 +48,6 @@ header
     max-width:1200px;
     margin:auto;
 }
-.text1
-{
-    position:absolute;
-}
 
 h1
 {
@@ -56,4 +57,21 @@ h1
     margin-top:275px;
     margin-left:150px;
     position:absolute;
+}
+#about-us
+{
+    color:white;
+    position:absolute;
+}
+#about-us h1
+{
+    margin-top:650px;
+}
+#events h1
+{
+    margin-top:1300px;
+}
+#contact-us h1
+{
+    margin-top:1950px;
 }
