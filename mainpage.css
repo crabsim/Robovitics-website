@@ -1,83 +1,69 @@
-*
+.purple
 {
-    margin:0;
-    padding:0;
+    position:sticky;
+    top:0;
+    z-index:10;
+    background-color: purple;
 }
 body
 {
-    background-color: rgb(25, 18, 70);
+    background-color: purple;
 }
-header
+.brand-logo
 {
-    background-color: rgb(25, 18, 70);
-    height:100vh;
-    background-size:cover;
-    background-position:center;
+    height:40px;
+    padding-left: 30px;
+}
+#nav-mobile li
+{
+    padding:0 10px;
+}
+#nav-mobile li a
+{
+    float:left;
+    text-align:left;
+}
+.purple ul li a:hover
+{
+    color:red;
 }
 .nav
 {
-    float:left;
-    list-style:none;
-    margin-top:30px;
-    position: relative;
+    font-weight:600;
+    font-size:16px;
 }
-.nav li
+#slider
 {
-    display:inline-block;
+    width:100%;
 }
-.nav li a
+.carousel-caption
 {
-    color:white;
-    padding:5px 20px;
-    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
-    text-decoration: none;
-    font-size:15px;
+    top:50%;
+    transform:translateY(-50%);
+    bottom:initial;
 }
-.nav li a:hover
-{
-    border:1px solid white;
-}
-.logo img
-{
-    float:right;
-    height:100px;
-    padding:5px 20px; 
-}
-.row
-{
-    max-width:1200px;
-    margin:auto;
-}
-
-h1
+.carousel-caption h5
 {
     color:white;
-    text-transform:uppercase;
-    text-align:center;
-    margin-top:275px;
-    margin-left:150px;
-    position:absolute;
 }
-#about-us
+#about
 {
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: purple;
+    color: white;
+}
+.jumbotron
+{
+    background-color: purple;
     color:white;
-    position:absolute;
 }
-#about-us h1
+.progress-bar
 {
-    margin-top:650px;
+    border-radius:16px;
 }
-#events h1
+.progress
 {
-    margin-top:1300px;
-}
-#contact-us h1
-{
-    margin-top:1950px;
-}
-#about-us h3
-{
-    margin-top:800px;
-    margin-left:500px;
-    margin-right:200px;
+    border-radius:16px;
+    margin-bottom: 20px;
 }
