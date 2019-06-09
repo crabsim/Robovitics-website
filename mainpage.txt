@@ -4,47 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="materialize.min.css">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="slim.min.js" ></script>
-<script src="popper.min.js" ></script>
-<script src="bootstrap.min.js" ></script>
-<script src="materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="mainpage.css">
   <title>Document</title>
 </head>
 <body>
-   
-  <nav class="navbar navbar-expand-lg purple">
-    <a class="navbar-brand" href="#" style="margin-left: 29px">Robovitics page</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="mainpage.html" style="margin-left:746px">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gravitas">Gravitas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#members">Members</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about-us">About Us</a>
-        </li>
+  <nav class="purple">
+    <div class="nav-wrapper" style="padding:5px;">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="nav" href="#aboutus">About US</a></li>
+        <li><a class="nav "href="#blabla">blabla</a></li>
+        <li><a class="nav" href="#moreblabla">Moreblabla</a></li>
       </ul>
-      
     </div>
   </nav>
-  
   <div class="slider">
-    <div id="#gallery" class="carousel slide" data-ride="carousel">
+    <div id="headslide" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#headslide" data-slide-to="0" class="active"></li>
         <li data-target="#headslide" data-slide-to="1"></li>

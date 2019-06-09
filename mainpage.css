@@ -3,11 +3,11 @@
     position:sticky;
     top:0;
     z-index:10;
-    background-color: purple;
+    background-color: #5a005a;
 }
 body
 {
-    background-color: purple;
+    background-color: #5a005a;
 }
 .brand-logo
 {
@@ -25,7 +25,7 @@ body
 }
 .purple ul li a:hover
 {
-    color:red;
+    color:white;
 }
 .nav
 {
@@ -50,12 +50,13 @@ body
 {
     padding-top:50px;
     padding-bottom: 50px;
-    background-color: purple;
+    background-color: #5a005a;
     color: white;
 }
 .jumbotron
 {
-    background-color: purple;
+    margin-top:224px;
+    background-color:#5a005a;
     color:white;
 }
 .progress-bar
