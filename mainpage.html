@@ -4,19 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="demo.css">
   <link rel="stylesheet" href="materialize.min.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <script src="slim.min.js" ></script>
 <script src="popper.min.js" ></script>
+<script defer src="jquery.flexslider.js"></script>
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="jquery.flexslider.js"></script>
 <script src="bootstrap.min.js" ></script>
 <script src="materialize.min.js"></script>
+<script src="jquery.min.js"></script>
   <link rel="stylesheet" href="mainpage.css">
   <title>Document</title>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
+    
+        <script type="text/javascript">
+          $(function(){
+            SyntaxHighlighter.all();
+          });
+          $(window).load(function(){
+            $('.flexslider').flexslider({
+              animation: "slide",
+              start: function(slider){
+                $('body').removeClass('loading');
+              }
+            });
+          });
+        </script>
+<style type="text/css">
+  .flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
+  }
+  li.css a {
+    border-radius: 0;
+  }
+</style>
+    <style>
+      body {
+          position: relative; 
+      }
+      #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+      #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+      #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+      #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+      #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+      </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
    
   <nav class="navbar navbar-expand-lg purple">
-    <a class="navbar-brand" href="#" style="margin-left: 29px">Robovitics page</a>
+    <a class="navbar-brand" data-toggle="tooltip" title="Designed by crabsim" data-placement="bottom" href="#" style="margin-left: 29px">Robovitics page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,7 +94,7 @@
   </nav>
   
   <div class="slider">
-    <div id="#gallery" class="carousel slide" data-ride="carousel">
+    <div id="gallery" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#headslide" data-slide-to="0" class="active"></li>
         <li data-target="#headslide" data-slide-to="1"></li>
@@ -74,36 +124,62 @@
       </a>
     </div>
   </div>   
-  <section id="#aboutus">
+  <section id="about-us" style="margin-top:0px">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h2 class="display-4">About Us</h2>
-      <p class="lead">wsnknksnlw</p>
+      <!-- <p class="lead">wsnknksnlw</p> -->
     </div>
     <div class="col-md-6">
-        <p>Artificial Intelligence</p>
+        <!-- <p>Artificial Intelligence</p>
           <div class="progress">
           <div class="progress-bar" style="width:85%;">85%</div>
+        </div> -->
+        <div class="container">
+          <div class="jumbotron">
+            <h1>How we started ?</h1> 
+            <p>It was the passion of our seniors Kumar Utkarsh (B.Tech EEE, 2007-2011) and Ayush Agarwal (B.Tech EIE 2008-2012) that laid the milestone for our club. With great enthusiastic spirits, RoboVITics was founded on 22nd October, 2010 in VIT University, Vellore. Our club turned out to be the first technical club in VIT providing a platform for all tech people to make their desired projects with the support and guidance of our club members.</p> 
+            <h1>Our Mission</h1>
+            <p> The prime concern of the club is to introduce and spread technical knowledge to every student possible. Apart from participating in events, workshops and competitions, members of RoboVITics bear a responsibility to pass on their technical knowledge to all those interested people who are in the quest of searching for technical stuff. We are also indulged in several social outreach programmes, where we go and teach the children of various underprivileged schools about science, robotics and electronics</p>
+            <h1>What we Do</h1>
+            <p>Quite simple to say, the prime objective of RoboVITics is to spread technical knowledge to students in and around the radius of VIT. Robotics is now a budding technological field, and it should be reachable to everyone. We conduct outreach sessions where our club members go to schools and introduce some robotic concepts to them which peeks their interest into robotics. we conduct hands –on sessions for students to have a practical approach apart from technical knowledge.</p>
+          </div>
         </div>
         </div>
   </div>
   
 </section>
-<section id="#blabla">
+<section id="gravitas">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h2 class="display-4">Blabla</h2>
-      <p class="lead">wsnknksnlw</p>
+      <p class="lead"></p>
     </div>
   </div>
 </section>
-<section id="#moreblabla">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h2 class="display-4">MoreBlabla</h2>
-      <p class="lead">wsnknksnlw</p>
+<section id="members">
+  <h2 style="color:white">Members</h2>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+          <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+        </li>
+        <li>
+          <img src="images/kitchen_adventurer_lemon.jpg" />
+          <p class="flex-caption">Adventurer Lemon</p>
+        </li>
+        <li>
+          <img src="images/kitchen_adventurer_donut.jpg" />
+          <p class="flex-caption">Adventurer Donut</p>
+        </li>
+        <li>
+          <img src="images/kitchen_adventurer_caramel.jpg" />
+          <p class="flex-caption">Adventurer Caramel</p>
+        </li>
+      </ul>
+   
     </div>
-  </div>
 </section>
 
 </body>
